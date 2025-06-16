@@ -1,0 +1,196 @@
+/* style.css 가장 위쪽 */
+@font-face{
+  font-family: "PokemonDPPt";
+  src: local("Pokemon DPPt Regular"),          /* 설치돼 있으면 그대로 사용 */
+       url("../fonts/pokemon-dppt.woff2") format("woff2"), /* 없으면 다운 */
+       url("../fonts/pokemon-dppt.woff")  format("woff");
+  font-display: swap; /* 처음엔 기본 글꼴로 보였다가 로딩되면 교체 */
+}
+
+/* 이후 전역 지정 */
+body{
+  font-family: "PokemonDPPt", "Press Start 2P", monospace;
+}
+
+
+/* Google-Fonts: 도트 느낌 글꼴 */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root{
+  --yellow:#FFCC00;
+  --red:#FF0000;
+  --blue:#3399FF;
+  --gray:#A19E9E;
+  --white:#FFFFFF;
+  --black:#000000;
+
+}
+
+/* ===== 홈 전용 ===== */
+body.home{
+  background: url('../images/bg.png') center / cover fixed no-repeat;
+  /* 필요하면 추가 스타일 */
+}
+
+
+
+/* ===== 공통 기본 ===== */
+body{
+  color: var(--black);
+  background : url('../images/bg2.jpeg') center / cover fixed no-repeat;
+    background-color: transparent; /* 회색 덮어쓰기 방지 (선택) */
+
+}
+
+
+
+
+.navbar-brand img{ height:40px; }
+
+.card:hover{
+  transform:scale(1.05);
+  transition:.25s;
+}
+
+.badge-type{ font-size:.75rem; }
+
+/* style.css 맨 아래쯤 추가 */
+.bg-yellow   { background-color: var(--yellow) !important; }
+.navbar-yellow .nav-link,
+.navbar-yellow .navbar-brand           { color: #000 !important; } /* 검정 텍스트 */
+.navbar-yellow .navbar-toggler-icon    { filter: invert(1); }      /* 토글러 아이콘 검정으로 */
+
+/* style.css */
+
+.title-box {
+  background-color: rgba(255, 255, 255, 0.85); /* 연한 흰색 반투명 */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  display: block;
+  width:  fit-content;   /* 내용만큼만 너비 */
+  margin: 0 auto 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.85); /* 반투명 흰색 */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  border: none;
+}
+
+.info-box {
+  background-color: rgba(255, 255, 255, 0.85); /* 반투명 흰색 */
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.img-box img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* style.css 끝부분에 한 줄 */
+.bg-purple { background-color:#a162e8!important; color:#FFFFFF!important; }
+
+/* 물 타입 전용 */
+.bg-water {
+  background-color:#3399FF!important;
+  color:#FFFFFF!important;   /* 글자 흰색 */
+}
+
+/* 불 타입 전용 */
+.bg-fire {
+  background-color:#FF0000!important;
+  color:#FFFFFF!important;   /* 글자 흰색 */
+}
+
+.bg-purple {
+  background-color: #a162e8 !important;
+  color: #fff !important;
+}
+
+.bg-purple {
+  background-color: #a162e8 !important;
+  color: #fff !important;
+}
+
+.transparent-button {
+  background: rgba(255, 255, 255, 0.6); /* ✅ 더 뚜렷한 흰색 배경 */
+  color: #000;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.transparent-button:hover {
+  background: rgba(255, 255, 255, 0.85); /* hover 시 더 선명 */
+  color: #000;
+}
+
+.bg-water {
+  background-color: #3399ff !important;
+  color: #fff !important;
+}
+.bg-electric {
+  background-color: #fcd535 !important;
+  color: #FFFFFF !important;
+}
+
+.bg-purple {
+  background-color: #a162e8 !important; /* 고스트 타입용 */
+  color: #fff !important;
+}
+
+.bg-poison {
+  background-color: #b97fc9 !important; /* 독 타입용 */
+  color: #fff !important;
+}
+
+/* 에스퍼 타입 배지 색상 */
+.bg-psychic {
+  background-color: #F85888; /* 에스퍼 타입 핑크 */
+  color: white;
+}
+/* 비행 타입 배지 색상 */
+.bg-flying {
+  background-color: #A890F0;  /* 연보라색 */
+  color: white;
+}
+.bg-ice {
+  background-color: #98D8D8;
+  color: black;
+}
+
+.bg-poison {
+  background-color: #A040A0;
+  color: white;
+}
+
+.bg-purple {  /* 고스트 타입용 커스텀 */
+  background-color: #705898;
+  color: white;
+}
+
+.bg-dragon {
+  background-color: #7038F8;
+  color: white;
+}
+
+.bg-electric { background-color: #F8D030; color: black; }
+.bg-normal { background-color: #A8A878; color: white; }
+.bg-psychic { background-color: #F85888; color: white; }
+.bg-dragon { background-color: #7038F8; color: white; }
+.favorite-title-box {
+  background: rgba(255, 255, 255, 0.85); /* 투명한 흰색 */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  max-width: 500px;
+  margin: 0 auto;
+}
